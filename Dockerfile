@@ -1,4 +1,4 @@
-FROM maven as maven
+FROM maven:3.6.2-jdk-8  as maven
 RUN mkdir /usr/src/mymaven
 WORKDIR /usr/src/mymaven
 COPY . .
